@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KRISTIN WATSON — Portfolio & Art Direction</title>
+  <meta name="description" content="Editorial Art Director & High-Fashion Photographer Kristin Watson. Specializing in visual identity, cinematic lighting, and editorial campaigns.">
+  
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Editorial Page Spine / Left Gray Stripe (from reference design) -->
+  <aside class="editorial-spine" aria-hidden="true">
+    <div class="spine-line"></div>
+    <span class="spine-code">KW // 2026</span>
+  </aside>
+
+  <!-- Main Application Wrapper -->
+  <div class="app-container">
+    
+    <!-- Top Navigation Header -->
+    <header class="site-header">
+      <nav class="nav-links" id="mainNav">
+        <a href="#home" class="nav-item active" data-nav="home">Home</a>
+        <a href="#work" class="nav-item" data-nav="work">Work <span class="nav-count">(12)</span></a>
+        <a href="#about" class="nav-item" data-nav="about">About</a>
+        <a href="#archive" class="nav-item" data-nav="archive">Archive</a>
+      </nav>
+
+      <div class="header-right">
+        <!-- Audio / Theme quick pills -->
+        <button class="sound-toggle-btn" id="soundToggle" title="Toggle audio feedback" aria-label="Toggle Sound">
+          <span class="sound-icon">♪</span>
+          <span class="sound-label">Audio: OFF</span>
+        </button>
+
+        <!-- Reference Match: Contact Me ↗ Button -->
+        <button class="contact-btn" id="openContactBtn" aria-label="Contact Kristin Watson">
+          <span>Contact Me</span>
+          <span class="btn-arrow" aria-hidden="true">↗</span>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-btn" id="mobileMenuToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <div class="mobile-drawer-header">
+        <span class="brand-monogram">KW</span>
+        <button class="drawer-close-btn" id="closeDrawerBtn">✕</button>
+      </div>
+      <nav class="mobile-nav-list">
+        <a href="#home" class="mobile-nav-item">Home</a>
+        <a href="#work" class="mobile-nav-item">Work (12)</a>
+        <a href="#about" class="mobile-nav-item">About</a>
+        <a href="#archive" class="mobile-nav-item">Archive</a>
+      </nav>
+      <div class="mobile-drawer-footer">
+        <button class="contact-btn w-full" id="mobileContactBtn">Contact Me ↗</button>
+      </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <!-- HERO SECTION (Exact Reference Reproduction) -->
+      <section class="hero-section" id="home">
+        <!-- Ambient Atmospheric Lighting Gradients -->
+        <div class="hero-atmosphere" aria-hidden="true">
+          <div class="ambient-glow glow-top"></div>
+          <div class="ambient-glow glow-center"></div>
+          <div class="ambient-glow glow-bottom"></div>
+          <div class="subtle-noise"></div>
+        </div>
+
+        <!-- Hero Content Grid -->
+        <div class="hero-grid">
+          
+          <!-- Top-Left Massive Name: KRISTIN -->
+          <div class="hero-text-block text-top-left">
+            <h1 class="hero-title hero-first-name" id="displayFirstName">KRISTIN</h1>
+            <p class="hero-subtext">Creative Director &amp; Visual Artist — Paris / NYC</p>
+          </div>
+
+          <!-- Central Subject / Portrait Container with Viewfinder -->
+          <div class="hero-subject-wrapper" id="subjectStage">
+            <div class="portrait-halo"></div>
+            
+            <!-- Portrait Image Container -->
+            <div class="portrait-frame">
+              <img 
+                src="assets/subject-clean-portrait.png" 
+                alt="Kristin Watson Editorial Portrait" 
+                id="heroPortraitImg"
+                class="portrait-img"
+                loading="eager"
+              >
+            </div>
+
+            <!-- Focus / Crop Viewfinder (Exact matching box with 4 corner handles) -->
+            <div class="viewfinder-box" id="viewfinder">
+              <!-- Corner handle dots / squares (reference image matching) -->
+              <span class="corner-handle handle-tl" data-handle="tl" title="Drag to resize"></span>
+              <span class="corner-handle handle-tr" data-handle="tr" title="Drag to resize"></span>
+              <span class="corner-handle handle-bl" data-handle="bl" title="Drag to resize"></span>
+              <span class="corner-handle handle-br" data-handle="br" title="Drag to resize"></span>
+
+              <!-- Focus HUD Readout overlay (subtle camera metadata) -->
+              <div class="reticle-hud">
+                <span class="hud-rec"><span class="rec-dot"></span>REC</span>
+                <span class="hud-lens">85mm f/1.4</span>
+                <span class="hud-iso" id="hudCoords">FOC: 48.2%</span>
+              </div>
+            </div>
+
+            <!-- Interactive Viewfinder Helper Hint -->
+            <div class="viewfinder-tooltip">
+              <span>✦ Drag frame or handles to reframe</span>
+            </div>
+          </div>
+
+          <!-- Bottom-Right Massive Name: WATSON -->
+          <div class="hero-text-block text-bottom-right">
+            <div class="hero-meta-badge">
+              <span class="badge-dot"></span>
+              <span>Available for 2026 Commissions</span>
+            </div>
+            <h1 class="hero-title hero-last-name" id="displayLastName">WATSON</h1>
+          </div>
+
+        </div>
+
+        <!-- Scroll Down Prompt -->
+        <a href="#work" class="hero-scroll-indicator" aria-label="Scroll to featured works">
+          <span class="scroll-track"><span class="scroll-wheel"></span></span>
+          <span class="scroll-label">Selected Works (12)</span>
+        </a>
+      </section>
+
+      <!-- FEATURED WORKS (12) SECTION -->
+      <section class="section-container" id="work">
+        <div class="section-header">
+          <div class="section-title-wrap">
+            <span class="section-kicker">FEATURED PORTFOLIO</span>
+            <h2 class="section-heading">SELECTED WORKS <span class="badge-count">12</span></h2>
+          </div>
+          
+          <!-- Category Filter Tabs -->
+          <div class="work-filters" id="workFilters" role="tablist">
+            <button class="filter-btn active" data-filter="all">All (12)</button>
+            <button class="filter-btn" data-filter="Editorial">Editorial</button>
+            <button class="filter-btn" data-filter="Fashion">Fashion</button>
+            <button class="filter-btn" data-filter="Campaign">Campaign</button>
+            <button class="filter-btn" data-filter="Runway">Runway</button>
+          </div>
+        </div>
+
+        <!-- 12 Project Cards Grid -->
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Projects are rendered dynamically via JavaScript & statically for instant display -->
+        </div>
+      </section>
+
+      <!-- ABOUT SECTION -->
+      <section class="section-container about-section" id="about">
+        <div class="about-grid">
+          <div class="about-statement">
+            <span class="section-kicker">DISCIPLINE &amp; VISION</span>
+            <h2 class="about-title">Sculpting light, emotion, and architectural form across contemporary fashion.</h2>
+            <p class="about-body">
+              With over a decade of practice spanning Paris, New York, and Tokyo, Kristin Watson constructs evocative visual narratives that dismantle standard commercial tropes. Working at the intersection of analog film intimacy and high-contrast digital gel lighting, Watson’s commissions challenge spatial perception and celebrate human presence.
+            </p>
+
+            <div class="about-stats-row">
+              <div class="stat-card">
+                <span class="stat-num">12+</span>
+                <span class="stat-desc">Years in Practice</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-num">85+</span>
+                <span class="stat-desc">Published Campaigns</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-num">24</span>
+                <span class="stat-desc">International Honors</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-details">
+            <div class="services-block">
+              <h3 class="block-label">CORE CAPABILITIES</h3>
+              <ul class="capability-tags">
+                <li>Creative Art Direction</li>
+                <li>Editorial Photography</li>
+                <li>Lighting Architecture</li>
+                <li>Fashion Film Direction</li>
+                <li>Brand Identity Systems</li>
+                <li>Exhibition Curation</li>
+              </ul>
+            </div>
+
+            <div class="clients-block">
+              <h3 class="block-label">SELECTED CLIENTS &amp; PRESS</h3>
+              <div class="client-marquee">
+                <span>VOGUE ITALIA</span>
+                <span>•</span>
+                <span>SAINT LAURENT</span>
+                <span>•</span>
+                <span>ACNE STUDIOS</span>
+                <span>•</span>
+                <span>HARPER'S BAZAAR</span>
+                <span>•</span>
+                <span>DAZED</span>
+                <span>•</span>
+                <span>BOTTEGA VENETA</span>
+                <span>•</span>
+                <span>JACQUEMUS</span>
+                <span>•</span>
+                <span>NOWNESS</span>
+              </div>
+            </div>
+
+            <div class="about-cta-box">
+              <p>Ready to discuss an upcoming collection, editorial feature, or global campaign?</p>
+              <button class="contact-btn" onclick="document.getElementById('openContactBtn').click()">Initiate Inquiry ↗</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ARCHIVE TABLE SECTION -->
+      <section class="section-container" id="archive">
+        <div class="section-header">
+          <div class="section-title-wrap">
+            <span class="section-kicker">DOCUMENTATION</span>
+            <h2 class="section-heading">CHRONOLOGICAL ARCHIVE</h2>
+          </div>
+          <div class="archive-search">
+            <input type="text" id="archiveSearchInput" placeholder="Filter by client, year, or title..." aria-label="Filter archive">
+          </div>
+        </div>
+
+        <div class="archive-table-wrapper">
+          <table class="archive-table" id="archiveTable">
+            <thead>
+              <tr>
+                <th>YEAR</th>
+                <th>PROJECT TITLE</th>
+                <th>CLIENT / PUBLICATION</th>
+                <th>CATEGORY</th>
+                <th>LOCATION</th>
+                <th class="text-right">ACTION</th>
+              </tr>
+            </thead>
+            <tbody id="archiveTableBody">
+              <!-- Rendered via JS -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h2 class="footer-logo">KRISTIN WATSON</h2>
+          <p>Creative Studio Paris / New York — All Rights Reserved © 2026</p>
+        </div>
+        <div class="footer-links-col">
+          <span class="col-title">NAVIGATION</span>
+          <a href="#home">Home</a>
+          <a href="#work">Work (12)</a>
+          <a href="#about">About</a>
+          <a href="#archive">Archive</a>
+        </div>
+        <div class="footer-links-col">
+          <span class="col-title">SOCIALS</span>
+          <a href="https://instagram.com" target="_blank" rel="noopener">Instagram ↗</a>
+          <a href="https://behance.net" target="_blank" rel="noopener">Behance ↗</a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a href="https://vimeo.com" target="_blank" rel="noopener">Vimeo ↗</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>Designed &amp; Crafted for High-Fashion Visionaries</span>
+        <button class="back-to-top" id="backToTopBtn">Back to top ↑</button>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- LIGHTBOX MODAL FOR WORKS -->
+  <dialog class="lightbox-dialog" id="lightboxModal">
+    <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+    <div class="lightbox-content">
+      <button class="lightbox-close-btn" id="lightboxCloseBtn" aria-label="Close Preview">✕</button>
+      <div class="lightbox-media-wrapper">
+        <img src="" alt="Project Artwork" id="lightboxImg" class="lightbox-img">
+      </div>
+      <div class="lightbox-info">
+        <div class="lightbox-header">
+          <span class="lightbox-cat" id="lightboxCat">EDITORIAL</span>
+          <span class="lightbox-year" id="lightboxYear">2026</span>
+        </div>
+        <h3 class="lightbox-title" id="lightboxTitle">PROJECT TITLE</h3>
+        <p class="lightbox-client" id="lightboxClient">Client Name</p>
+        <p class="lightbox-desc" id="lightboxDesc">Detailed art direction case study and lighting breakdown.</p>
+        <div class="lightbox-nav-buttons">
+          <button class="lightbox-btn" id="lightboxPrevBtn">← Prev</button>
+          <span class="lightbox-counter" id="lightboxCounter">1 / 12</span>
+          <button class="lightbox-btn" id="lightboxNextBtn">Next →</button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- CONTACT MODAL / SLIDE-IN DRAWER -->
+  <div class="contact-drawer" id="contactDrawer">
+    <div class="contact-drawer-overlay" id="contactOverlay"></div>
+    <div class="contact-drawer-panel">
+      <div class="drawer-header">
+        <div>
+          <span class="section-kicker">GET IN TOUCH</span>
+          <h2 class="drawer-title">Let's Create Together</h2>
+        </div>
+        <button class="drawer-close-btn" id="closeContactBtn" aria-label="Close Contact Panel">✕</button>
+      </div>
+
+      <div class="contact-direct-card">
+        <span class="direct-label">DIRECT INQUIRIES</span>
+        <div class="email-copy-row">
+          <span class="direct-email" id="copyEmailText">studio@kristinwatson.com</span>
+          <button class="copy-pill-btn" id="copyEmailBtn">Copy</button>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm" onsubmit="event.preventDefault(); window.handleContactSubmit();">
+        <div class="form-group">
+          <label for="userName">YOUR NAME *</label>
+          <input type="text" id="userName" placeholder="e.g. Elena Rostova" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="userEmail">YOUR EMAIL *</label>
+          <input type="email" id="userEmail" placeholder="e.g. elena@atelier.com" required>
+        </div>
+
+        <div class="form-group">
+          <label>PROJECT DISCIPLINE</label>
+          <div class="project-type-pills">
+            <label class="pill-radio"><input type="radio" name="projectType" value="Campaign" checked><span>Campaign</span></label>
+            <label class="pill-radio"><input type="radio" name="projectType" value="Editorial"><span>Editorial</span></label>
+            <label class="pill-radio"><input type="radio" name="projectType" value="Film"><span>Film / Video</span></label>
+            <label class="pill-radio"><input type="radio" name="projectType" value="Art Direction"><span>Art Direction</span></label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="userMessage">PROJECT OVERVIEW &amp; TIMELINE</label>
+          <textarea id="userMessage" rows="4" placeholder="Tell us about the scope, timeline, and vision..."></textarea>
+        </div>
+
+        <button type="submit" class="contact-submit-btn" id="submitFormBtn">
+          <span>Send Inquiry Message</span>
+          <span class="btn-arrow">→</span>
+        </button>
+      </form>
+
+      <div class="form-success-banner" id="formSuccess">
+        <span class="success-icon">✓</span>
+        <h4>Inquiry Received!</h4>
+        <p>Kristin’s studio will review your project brief within 24 hours.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- QUICK CUSTOMIZER TOOLBAR (Allows instant personal name, image & color adjustment) -->
+  <aside class="customizer-panel collapsed" id="customizerPanel">
+    <button class="customizer-toggle-btn" id="customizerToggleBtn" title="Personalize / Customize Portfolio">
+      <span class="toggle-icon">⚙</span>
+      <span class="toggle-text">Quick Customize</span>
+    </button>
+    
+    <div class="customizer-body">
+      <div class="customizer-header">
+        <h4>Personalize Portfolio</h4>
+        <span class="customizer-hint">Make it yours in seconds</span>
+      </div>
+
+      <!-- Change Name -->
+      <div class="customizer-field">
+        <label for="inputFirstName">First Name (Top-Left):</label>
+        <input type="text" id="inputFirstName" value="KRISTIN" placeholder="KRISTIN">
+      </div>
+      <div class="customizer-field">
+        <label for="inputLastName">Last Name (Bottom-Right):</label>
+        <input type="text" id="inputLastName" value="WATSON" placeholder="WATSON">
+      </div>
+
+      <!-- Color Theme Preset -->
+      <div class="customizer-field">
+        <label>Atmosphere Theme:</label>
+        <div class="theme-pills">
+          <button class="theme-pill active" data-theme="cobalt" title="Electric Cobalt (Reference Match)">Cobalt</button>
+          <button class="theme-pill" data-theme="midnight" title="Midnight Noir">Noir</button>
+          <button class="theme-pill" data-theme="cyan" title="Cyber Cyan">Cyan</button>
+          <button class="theme-pill" data-theme="magenta" title="Neon Magenta">Neon</button>
+        </div>
+      </div>
+
+      <!-- Portrait Image Source Switcher -->
+      <div class="customizer-field">
+        <label>Subject Photo Source:</label>
+        <div class="photo-select-row">
+          <button class="photo-choice-btn active" id="btnUseReference">Ref Crop</button>
+          <button class="photo-choice-btn" id="btnUseHighRes">High-Res</button>
+          <button class="photo-choice-btn" id="btnUploadTrigger">Upload...</button>
+          <input type="file" id="customPhotoInput" accept="image/*" style="display:none;">
+        </div>
+      </div>
+
+      <!-- Viewfinder Controls -->
+      <div class="customizer-field">
+        <label>Viewfinder Focus Box:</label>
+        <div class="vf-btn-group">
+          <button class="vf-btn" id="btnResetViewfinder">Center Box</button>
+          <button class="vf-btn" id="btnToggleHud">Toggle HUD</button>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- JavaScript Application Logic -->
+  <script src="app.js"></script>
+</body>
+</html>

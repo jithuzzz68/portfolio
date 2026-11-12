@@ -1,0 +1,15 @@
+# Logs & temp files
+*.log
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Environment
+.env
+.env.local
+
+# Vercel deployment folder
+.vercel
+
+# System generated
+.system_generated/

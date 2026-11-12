@@ -1,0 +1,37 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+  <defs>
+    <radialGradient id="grad-9" cx="60%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#34d399" stop-opacity="0.85" />
+      <stop offset="50%" stop-color="#064e3b" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#022c22" stop-opacity="1" />
+    </radialGradient>
+    <filter id="grain-9">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" result="noise" />
+      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.12 0" />
+      <feBlend mode="overlay" in2="SourceGraphic" />
+    </filter>
+  </defs>
+  <rect width="800" height="1000" fill="url(#grad-9)" />
+  
+  <!-- Subtle geometric editorial grid lines -->
+  <circle cx="400" cy="460" r="280" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.5" />
+  <circle cx="400" cy="460" r="160" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1" stroke-dasharray="4 6" />
+  <line x1="120" y1="460" x2="680" y2="460" stroke="rgba(255,255,255,0.1)" stroke-width="1" />
+  <line x1="400" y1="180" x2="400" y2="740" stroke="rgba(255,255,255,0.1)" stroke-width="1" />
+
+  <!-- Camera Reticle in card -->
+  <rect x="260" y="320" width="280" height="280" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" />
+  <rect x="256" y="316" width="8" height="8" fill="#ffffff" />
+  <rect x="536" y="316" width="8" height="8" fill="#ffffff" />
+  <rect x="256" y="596" width="8" height="8" fill="#ffffff" />
+  <rect x="536" y="596" width="8" height="8" fill="#ffffff" />
+
+  <text x="50" y="80" font-family="'Space Grotesk', sans-serif" font-size="16" letter-spacing="4" fill="rgba(255,255,255,0.7)">FASHION / 2024</text>
+  <text x="750" y="80" text-anchor="end" font-family="'Space Grotesk', sans-serif" font-size="14" letter-spacing="3" fill="rgba(255,255,255,0.5)">PROJ // 09</text>
+
+  <text x="400" y="475" text-anchor="middle" font-family="'Bebas Neue', sans-serif" font-size="64" letter-spacing="8" fill="#ffffff" opacity="0.95">INDIGO ILLUSION</text>
+  <text x="400" y="525" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-size="18" letter-spacing="5" fill="rgba(255,255,255,0.8)">BOTTEGA VENETA</text>
+
+  <text x="50" y="930" font-family="'Space Grotesk', sans-serif" font-size="14" letter-spacing="2" fill="rgba(255,255,255,0.5)">WATSON STUDIO ARCHIVE</text>
+  <text x="750" y="930" text-anchor="end" font-family="'Space Grotesk', sans-serif" font-size="14" letter-spacing="2" fill="rgba(255,255,255,0.5)">VIEW SERIES ↗</text>
+</svg>

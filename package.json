@@ -1,0 +1,19 @@
+{
+  "name": "kristin-watson-portfolio",
+  "version": "1.0.0",
+  "description": "High-fashion editorial portfolio with interactive camera viewfinder reticle",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "portfolio",
+    "editorial",
+    "fashion",
+    "photography",
+    "art-direction",
+    "vercel"
+  ],
+  "author": "jithuzzz68",
+  "license": "MIT"
+}
